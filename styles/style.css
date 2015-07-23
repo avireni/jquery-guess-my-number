@@ -1,0 +1,227 @@
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+/*float styles*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 86%%;
+    height: 96%;
+    margin: 0.8em auto;
+    font-family: 'Lato', sans-serif;
+    background-color: #F0668B;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    display: inline;
+}
+/*---------------------------------------------------------------------------------
+   Header Styles
+---------------------------------------------------------------------------------*/
+
+header {
+    margin-top: 55px;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 4em;
+    padding: 0.4em;
+    color: #49081A;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 3px 4px rgb(184, 58, 92);
+}
+
+header h2 {
+    padding: 0.5em 0.8em 1em 0.8em;
+    font-size: 2em;
+    display: block;
+    line-height: 1em;
+    color: #49081A;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+p {
+    padding: 49px;
+    font-size: 1.5em;
+    line-height: 37px;
+    font-weight: 100;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(92, 29, 41, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(92, 29, 41, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(92, 29, 41, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(92, 29, 41, 0.75), rgba(0, 0, 0, 0));
+}
+
+.game p {
+    margin-top: 0.5em;
+    font-size: 1.8em;
+    padding-bottom: 0.5em;
+}
+
+#count {
+    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    display: block;
+    padding: 0.8em 0;
+    margin: 0.8em auto 0;
+    background: #50597b;
+    color: #fff;
+    border: solid 1px #1f253d;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+input.button {
+    background: #1F253D;
+    color: #E0C1D6;
+    font-size: 2em;
+    padding: 0.2em;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
+}
+
+input.button:hover {
+    background: #e64c65;
+    color: #fff;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
+    cursor: pointer;
+}
+
+input.text {
+    height: 95px;
+    text-align: center;
+    padding: 0.2em;
+    font-size: 2em;
+    border: solid 1px #141315;
+    background: #fff;
+    color: rgb(239, 42, 95);
+}
+
+#feedback {
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+::-webkit-input-placeholder {
+    color: #95a5a6;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    
+    color: #95a5a6;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    color: #95a5a6;
+}
+
+:-ms-input-placeholder {
+    color: #95a5a6;
+}
+
+ul.guessBox {
+    height: 80px;
+    margin: 10px auto 0;
+    rgba(92, 80, 84, 0.38);
+    padding: 0.5em;
+    display: block;
+    line-height: 2em;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #fff;
+    overflow: auto;
+}
+
+ul.guessBox li {
+    display: inline;
+    background-color: #1a4e95;
+    padding: 0.3em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 95%;
+    margin: 0.2em;
+    color: #fff;
+}
+@media only screen and (max-width: 480px) {
+   h1 {
+      font-size: 1.3em;
+      }
+
+header h2 {
+   font-size: 1em;
+  line-height: 1.3em;
+  letter-spacing: 3px;
+}
+p {
+  padding: 18px;
+  font-size: 1em;
+  line-height: 25px;
+  font-weight: 100;
+   }    
+}
